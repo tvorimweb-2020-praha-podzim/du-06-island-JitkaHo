@@ -20,12 +20,18 @@ body {
 
 /* HLAVICKA */
 
+header {  
+ background-image: url(images/island-hlavicka.jpg)
+}
+
 .titulek {
     font-family: 'Raleway', serif;
 }
 
 
+
 /* MENU */
+
 
 
 
