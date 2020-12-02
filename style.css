@@ -45,10 +45,17 @@ header {
 .autor {
   font-style: italic;
   padding: 1rem;
-  border-top: 2px solid whitesmoke;
 }
 
-
+.autor::before {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 80px;
+  height: 2px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
 
 /* MENU */
 .menu {
@@ -176,6 +183,9 @@ footer a {
       align-items: flex-start;
     }
 
+    figcaption {
+      display: none;
+    }
     .foto :hover .foto.figcaption.popisek {
       transform: translate(0,50%);
     }
