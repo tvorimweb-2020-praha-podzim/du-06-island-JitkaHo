@@ -81,8 +81,7 @@ header {
 
 /* OBSAH */
 
-.odstavec,
-.odstavec-levy {
+.odstavec{
   display: flex;
   flex-direction: column;
 }
@@ -237,6 +236,10 @@ footer a {
     padding: 2rem 3rem;
   }
 
+  .autor {
+    margin-bottom: 2rem;
+  }
+
   .titulek {
     font-size: 3rem;
   }
@@ -248,31 +251,28 @@ footer a {
     box-shadow: 5px 5px 5px 5px #888888;
     position: relative;
     top: -4rem;
+    background-color: #fff;
   }
   .menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    flex-basis: 25%;
     border-bottom: none;
-  }
-
-  .menu li {
+    border-top: none;
+    padding: 1rem 1rem;
+    margin-bottom: 0;
+    flex-basis: 20%;
     align-items: flex-start;
   }
 
+  .odstavec 
 
-  .odstavec-levy {
-    padding-left: 8rem;
+
+  
+
+  .odstavec img {
+    padding-left: 0;
   }
-
-  .odstavec-levy img {
-    position: relative;
-    left: -8rem;
-    max-width: 100%;
-    width: unset;
-    }
 
   .foto {
     position: relative;
