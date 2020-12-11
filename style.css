@@ -81,17 +81,16 @@ header {
 
 /* OBSAH */
 
-.odstavec{
-  display: flex;
-  flex-direction: column;
-}
 
 p {
   padding: 0 0.75rem;
   font-size: 1rem;
 }
 
-
+.content img {
+  max-width: 100%;
+  height: auto;
+}
 
 .popisek,
 .foto-popisek {
@@ -207,6 +206,8 @@ footer a {
     display: block;
     max-width: 50%;
   }
+
+
   .foto-popisek {
       background-color: rgba(50,50,50,0.7);
       position: absolute;
@@ -245,33 +246,39 @@ footer a {
   }
 
   .content {
-    display: flex;
-    flex-direction: column;
     margin: 0 5%;
     box-shadow: 5px 5px 5px 5px #888888;
     position: relative;
     top: -4rem;
     background-color: #fff;
   }
+
   .menu {
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     border-bottom: none;
     border-top: none;
     padding: 1rem 1rem;
-    margin-bottom: 0;
-    flex-basis: 20%;
-    align-items: flex-start;
+    margin: 0;
+    width: 28%;
+    height: ;
+    float: left;
+    height: max-content;
+    justify-content: stretch;
   }
 
-  .odstavec 
+  .menu li {
+    display: flex;
+    border-bottom: 1px solid gray;
+    font-size: 1rem;
+    }
 
+  .odstavec {
+    padding-left: 28%;
+  }
 
-  
-
-  .odstavec img {
-    padding-left: 0;
+  .odstavec:first-child {
+    padding-top: 1rem;
+    display: block;
   }
 
   .foto {
